@@ -1,10 +1,10 @@
 # overridefromenv
-[![Go Report Card](https://goreportcard.com/badge/github.com/benjohns1/scheduled-tasks/services)](https://goreportcard.com/report/github.com/benjohns1/scheduled-tasks/services)
+[![Go Report Card](https://goreportcard.com/badge/cu-library/overridefromenv)](https://goreportcard.com/report/github.com/cu-library/overridefromenv)
 <a href='https://github.com/jpoles1/gopherbadger' target='_blank'>![gopherbadger-tag-do-not-edit](https://img.shields.io/badge/Go%20Coverage-100%25-brightgreen.svg?longCache=true&style=flat)</a>
 [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](LICENSE)
 [![GoDoc](https://godoc.org/github.com/cu-library/overridefromenv?status.svg)](https://godoc.org/github.com/cu-library/overridefromenv)
 
-A tiny golang library. If any flags are not set, use environment variables to set them.
+A Go library for setting unset flags from environment variables.
 
 ## Usage
 
