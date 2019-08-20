@@ -3,43 +3,7 @@
 // Use of this source code is governed by the MIT
 // license that can be found in the LICENSE file.
 
-/*
-Package overridefromenv is a library which sets unset
-flags from environment variables.
-
-Here's an example of a small command line tool with
-a flag which can be set on the command line or
-from the environment. Set flags are not overwritten.
-
-		package main
-
-		import (
-			"flag"
-			"fmt"
-			"https://github.com/cu-library/overridefromenv"
-		)
-
-		const (
-			PREFIX = "SCANNER_"
-		)
-
-		func main() {
-			v := flag.Int("powerlevel", 0, "power level")
-			flag.Parse()
-			overridefromenv.Override(flags.CommandLine, PREFIX)
-			fmt.Printf("Power level: %v", *v)
-		}
-
-Then, from the command line:
-
-		$ scanner
-		Power level: 0
-		$ export SCANNER_POWERLEVEL=1000
-		$ scanner
-		Power level: 1000
-		$ scanner -powerlevel 9000
-		Power level: 9000
-*/
+// Package overridefromenv is a library which sets unset flags from environment variables.
 package overridefromenv
 
 import (
