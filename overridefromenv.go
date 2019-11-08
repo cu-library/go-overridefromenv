@@ -46,9 +46,8 @@ func Override(fs *flag.FlagSet, prefix string) error {
 		if found {
 			err := f.Value.Set(envVarValue)
 			if err != nil {
-				// TODO in 1.13: wrap the underlying error
-				return fmt.Errorf("Unable to set flag %v from environment variable %v, "+
-					"which has a value of \"%v\": %v",
+				return fmt.Errorf("unable to set flag %v from environment variable %v, "+
+					"which has a value of \"%v\": %w",
 					f.Name, envVarName, envVarValue, err)
 			}
 		}
